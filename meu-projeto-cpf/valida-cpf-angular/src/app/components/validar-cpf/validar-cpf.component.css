@@ -1,0 +1,91 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    /* evita ultrapassar a altura da tela */
+    margin: 0;
+    background-color: transparent;
+    /* fundo transparente para mostrar o do body */
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 18px 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    margin-top: 0;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #a0cce9;
+    cursor: default;
+}
+
+.message {
+    margin-top: 18px;
+    font-size: 16px;
+    min-height: 24px;
+    font-weight: 600;
+}
+
+.message.success {
+    color: #27ae60;
+}
+
+.message.error {
+    color: #e74c3c;
+}
+
+.message.loading {
+    color: #f39c12;
+}
